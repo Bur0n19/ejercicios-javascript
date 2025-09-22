@@ -15,6 +15,7 @@
         const limpiar = document.getElementById("btnLimpiar");
 
         addNumber.addEventListener("click", function() {
+            
             const valor = input.value.trim().toLowerCase();
             if (valor !== "") {
                 palabras.push(valor);

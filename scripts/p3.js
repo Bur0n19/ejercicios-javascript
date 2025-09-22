@@ -12,7 +12,7 @@ form.addEventListener("submit", function(event)
 
     if(precio <=0 || isNaN(precio))
     {
-        resultado.textContent = "⚠️ Ingrese una cantidad real por favor";
+        resultado.textContent = "Ingrese una cantidad real por favor";
        return;
     }
 
