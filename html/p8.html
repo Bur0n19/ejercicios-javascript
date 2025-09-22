@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/style.css" rel="stylesheet">
+    <title>Calcular Utilidaes</title>
+</head>
+<body>
+        <header>         
+             <nav class = "container-programs">
+                <a href = "p1.html" class = "button-programs" >Invertir Capital</a>
+                <a href = "p2.html" class = "button-programs" >Comisión por Sueldo</a>
+                <a href = "p3.html" class = "button-programs" >Descuento por Compra</a>
+                <a href = "p4.html" class = "button-programs" >Porcentaje de Calificaciones</a>
+                <a href = "p5.html" class = "button-programs" >Calculadora de edad</a>
+                <a href = "p6.html" class = "button-programs" >Palabras a Números</a>
+                <a href = "p7.html" class = "button-programs" >Pago por horas extra</a>
+                <a href = "p8.html" class = "button-programs" >Utilidad Anual</a>
+                <a href = "p9.html" class = "button-programs" >Formulario Validado</a>
+        </nav>      
+        </header>
+        <h1>Calcular Utilidades anuales</h1>
+        
+        <form id ="formUtilidades">
+
+            <div>
+                <label for="salario">Salario mensual</label>
+                <input type="number" id="salario" step="0.01" min="0" required>
+            </div>
+
+            <div>
+                <label for="antiguedad">Antigüedad en años:</label>
+                <input type="number" id="antiguedad" step="0.1" min="0" required>
+            </div>
+
+            <button type="submit">Calcular Utilidad</button>
+
+            <label></label>
+
+        </form>
+         <div id="resultado"></div>
+    
+        <script src = "../scripts/p8.js"></script>
+</body>
+</html>

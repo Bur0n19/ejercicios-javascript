@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/style.css" rel="stylesheet">
+        <link href ="../css/p9.css" rel ="stylesheet">
+    <title>Horas extras</title>
+</head>
+<body>
+        <header>         
+             <nav class = "container-programs">
+                <a href = "p1.html" class = "button-programs" >Invertir Capital</a>
+                <a href = "p2.html" class = "button-programs" >Comisión por Sueldo</a>
+                <a href = "p3.html" class = "button-programs" >Descuento por Compra</a>
+                <a href = "p4.html" class = "button-programs" >Porcentaje de Calificaciones</a>
+                <a href = "p5.html" class = "button-programs" >Calculadora de edad</a>
+                <a href = "p6.html" class = "button-programs" >Palabras a Números</a>
+                <a href = "p7.html" class = "button-programs" >Pago por horas extra</a>
+                <a href = "p8.html" class = "button-programs" >Utilidad Anual</a>
+                <a href = "p9.html" class = "button-programs" >Formulario Validado</a>
+        </nav>      
+        </header>
+        <br>
+
+
+         <div class="form-container">
+        <h2>Formulario de Registro</h2>
+        
+        <div id="alertBox" class="alert alert-error"></div>
+        
+        <form id="registroForm">
+            <div class="form-group">
+                <label for="nombre">Nombre completo *</label>
+                <input type="text" id="nombre" name="nombre">
+                <div class="error-message" id="errorNombre">El nombre es obligatorio</div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email">
+                <div class="error-message" id="errorEmail">Ingresa un email válido</div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Contraseña *</label>
+                <input type="password" id="password" name="password">
+                <div class="error-message" id="errorPassword">
+                    La contraseña debe tener al menos 6 caracteres, una mayúscula, una minúscula y un número
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="comentarios">Comentarios *</label>
+                <textarea id="comentarios" name="comentarios" rows="4" maxlength="50"></textarea>
+                <div class="error-message" id="errorComentarios">
+                    Los comentarios son obligatorios y no deben exceder 50 caracteres
+                </div>
+                <div style="font-size: 12px; color: #666; text-align: right;">
+                    <span id="contadorCaracteres">0</span>/50 caracteres
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox-group">
+                    <input type="checkbox" id="condiciones" name="condiciones">
+                    <label for="condiciones" style="display: inline; font-weight: normal;">
+                        Acepto las condiciones del servicio *
+                    </label>
+                </div>
+                <div class="error-message" id="errorCondiciones">Debes aceptar las condiciones</div>
+            </div>
+
+            <button type="submit">Registrarse</button>
+        </form>
+    </div>
+    <script src = "../scripts/p9.js"></script>
+</body>
+</html>

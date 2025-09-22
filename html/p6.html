@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/style.css" rel="stylesheet">
+    <title>Palabras a Números</title>
+</head>
+<body>
+        <header>         
+             <nav class = "container-programs">
+                <a href = "p1.html" class = "button-programs" >Invertir Capital</a>
+                <a href = "p2.html" class = "button-programs" >Comisión por Sueldo</a>
+                <a href = "p3.html" class = "button-programs" >Descuento por Compra</a>
+                <a href = "p4.html" class = "button-programs" >Porcentaje de Calificaciones</a>
+                <a href = "p5.html" class = "button-programs" >Calculadora de edad</a>
+                <a href = "p6.html" class = "button-programs" >Palabras a Números</a>
+                <a href = "p7.html" class = "button-programs" >Pago por horas extra</a>
+                <a href = "p8.html" class = "button-programs" >Utilidad Anual</a>
+                <a href = "p9.html" class = "button-programs" >Formulario Validado</a>
+        </nav>      
+        </header>
+
+        <h1>Palabras a números</h1>
+
+    <form id="formPA">
+        <label>Ingresa el nombre de números (0-9)</label>
+        <input type="text" id="palabra">
+        <button type="button" id="btnAgregar">Añadir a la lista</button>
+        <br>
+        <button type="button" id="btnTraducir">Traducir</button>
+        <button type="button" id="btnLimpiar">Limpiar lista</button>
+    </form>
+
+        <p>Lista original: <span id="original"></span></p>
+        <p>Lista traducida: <span id="traducida"></span></p>
+
+        <script src = "../scripts/p6.js"></script>
+</body>
+</html>
