@@ -1,11 +1,20 @@
      const palabras = [];
+
         const diccionario = {
             "cero": 0, "uno": 1, "dos": 2, "tres": 3, "cuatro": 4, "cinco": 5, "seis": 6, "siete": 7, "ocho": 8, "nueve": 9     
         };
 
+         document.addEventListener("keydown", function(event){
+            if(event.key === "Enter"){
+                event.preventDefault();
+                palabrasANumeros();
+            }
+        })
+
         function palabrasANumeros(arr) {
             return arr.map(palabra => diccionario[palabra.toLowerCase()] ?? -1);
         }
+       
 
         const input = document.getElementById("palabra");
         const spanOriginal = document.getElementById("original");
